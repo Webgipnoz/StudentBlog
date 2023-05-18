@@ -1,0 +1,20 @@
+.header {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.btn {
+  margin-left: 10px;
+}
