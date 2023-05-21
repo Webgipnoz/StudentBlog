@@ -45,52 +45,39 @@ body {
 
 .main {
   min-height: 70%;
-}
-
-.faq {
   display: flex;
-  justify-content: center;
-  padding: 20px;
+  flex-direction: column;
 }
 
-.box {
-  width: 400px;
-  height: 300px;
-  background-color: #ccc;
-  margin: 10px;
-}
-
-.box:hover .question {
-  background-color: #d34d43;
-}
-
-.question {
-  background-color: #000;
-  color: #fff;
-  width: calc(100% - 30px);
-  height: 100px;
-  float: left;
-  padding: 30px;
-  box-sizing: border-box;
+.main h1 {
   text-align: center;
 }
 
-.answer {
-  color: #000;
-  width: calc(100% - 30px);
-  height: 50%;
-  float: right;
-  padding: 10px;
-  box-sizing: border-box;
-  font-size: 26px;
+.main img {
+  width: 170px;
+  margin: 20px 20px 20px 20px;
+  border-radius: 50%;
 }
 
-.question h2 {
-  margin: 0;
+.privateBox {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  background-color: black;
+  margin-bottom: 10px;
 }
 
-.answer p {
-  margin: 0;
+.privateBox:hover {
+  border: 3px solid #d34d43;
+  background-color: #d34d43;
+}
+
+.info {
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column;
+  font-size: 25px;
+  background-color: white;
 }
 
 footer {
@@ -106,10 +93,7 @@ footer {
 
 footer .wave {
   position: absolute;
-  top: -100px;
-  left: 0;
   width: 100%;
-  height: 100px;
 }
 
 .social,
