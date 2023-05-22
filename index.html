@@ -16,44 +16,105 @@
       </nav>
     </header>
       <main class="main">
-        <div class="posts">
-          <div class="post">
-            <h2>Title 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lacus ut mi tristique bibendum sed at diam.</p>
-          </div>
-          <div class="post">
-            <h2>Title 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lacus ut mi tristique bibendum sed at diam.</p>
-          </div>
-          <div class="post">
-            <h2>Title 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lacus ut mi tristique bibendum sed at diam.</p>
-          </div>
+        <div class="postFilter">
+          <span class="filterItem activeFilter" data-filter="All">All</span>
+          <span class="filterItem" data-filter="Exam">Exam</span>
+          <span class="filterItem" data-filter="Internship">Internship</span>
+          <span class="filterItem" data-filter="Lectures">Lectures</span>
         </div>
-        <div class="column">
-          <div class="newPost">
-            <h2>Create New Post</h2>
-            <form>
-              <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-              </div>
-              <div class="form-group">
-                <label for="content">Content:</label>
-                <textarea id="content" name="content" rows="4" required></textarea>
-              </div>
-              <button>Create Post</button>
-            </form>
-          </div>
-          
-          <div class="news">
-            <h3>Latest Post</h3>
-            <div class="post">
-              <h2>Title</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lacus ut mi tristique bibendum sed at diam.</p>
+
+        <selection class="postConteiner">
+          <div class="postBox Exam">
+            <div class="postImg">
+              <img src="img/post1.jpg" alt="post1" class="postImg">
+            </div>
+            <div class="info">
+              <h2 class="category">Exam</h2>
+              <a href="postPage.html" class="postTitle">
+                How was the first computer created?
+              </a>
+              <span class="postDate"> 12 Feb 2022</span>
+              <p class="postDirection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet quae? Deleniti, exercitationem, aperiam veritatis tempora mollitia explicabo, id porro expedita nemo aliquam fugiat sunt!</p>
+              <div class="profile">
+                <img src="img/1Kollega.jpg" alt="1Kollega" class="profileImg">
+                <span>Ivan Ivan</span>
+              </div>    
             </div>
           </div>
-        </div>
+
+          <div class="postBox All">
+            <div class="postImg">
+              <img src="img/post2.jpg" alt="post2" class="postImg">
+            </div>
+            <div class="info">
+              <h2 class="category">All</h2>
+              <a href="postPage.html" class="postTitle">
+                How was the first computer created?
+              </a>
+              <span class="postDate"> 12 Feb 2022</span>
+              <p class="postDirection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet quae? Deleniti, exercitationem, aperiam veritatis tempora mollitia explicabo, id porro expedita nemo aliquam fugiat sunt!</p>
+              <div class="profile">
+                <img src="img/1Kollega.jpg" alt="1Kollega" class="profileImg">
+                <span>Ivan Ivan</span>
+              </div>  
+            </div>
+          </div>
+
+          <div class="postBox Internship">
+            <div class="postImg">
+              <img src="img/post3.jpg" alt="post3" class="postImg">
+            </div>
+            <div class="info">
+              <h2 class="category">Internship</h2>
+              <a href="postPage.html" class="postTitle">
+                How was the first computer created?
+              </a>
+              <span class="postDate"> 12 Feb 2022</span>
+              <p class="postDirection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet quae? Deleniti, exercitationem, aperiam veritatis tempora mollitia explicabo, id porro expedita nemo aliquam fugiat sunt!</p>
+              <div class="profile">
+                <img src="img/1Kollega.jpg" alt="1Kollega" class="profileImg">
+                <span>Ivan Ivan</span>
+              </div>  
+            </div>
+          </div>
+
+          <div class="postBox Internship">
+            <div class="postImg">
+              <img src="img/post4.jpg" alt="post4" class="postImg">
+            </div>
+            <div class="info">
+              <h2 class="category">Internship</h2>
+              <a href="postPage.html" class="postTitle">
+                How was the first computer created?
+              </a>
+              <span class="postDate"> 12 Feb 2022</span>
+              <p class="postDirection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet quae? Deleniti, exercitationem, aperiam veritatis tempora mollitia explicabo, id porro expedita nemo aliquam fugiat sunt!</p>
+              <div class="profile">
+                <img src="img/1Kollega.jpg" alt="1Kollega" class="profileImg">
+                <span>Ivan Ivan</span>
+              </div>  
+            </div>
+          </div>  
+
+          <div class="postBox Lectures">
+            <div class="postImg">
+              <img src="img/post5.jpg" alt="post5" class="postImg">
+            </div>
+            <div class="info">
+              <h2 class="category">Lectures</h2>
+              <a href="postPage.html" class="postTitle">
+                How was the first computer created?
+              </a>
+              <span class="postDate"> 12 Feb 2022</span>
+              <p class="postDirection">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, amet quae? Deleniti, exercitationem, aperiam veritatis tempora mollitia explicabo, id porro expedita nemo aliquam fugiat sunt!</p>
+              <div class="profile">
+                <img src="img/1Kollega.jpg" alt="1Kollega" class="profileImg">
+                <span>Ivan Ivan</span>
+              </div>  
+            </div>
+          </div>
+
+        </selection>
       </main>
     <footer>
       <div class="waves">
@@ -75,5 +136,11 @@
     <script src="js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>

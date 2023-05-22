@@ -1,7 +1,15 @@
 body {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 3rem 0 2rem;
 }
 
 .header {
@@ -45,72 +53,84 @@ body {
 
 main {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.posts {
-  flex: 1;
-  padding: 10px;
+.postFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 2rem !important;
 }
 
-.post {
-  background-color: #ccc;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
-
-.column {
-  width: 30%;
-}
-
-.newPost {
-  background-color: #ccc;
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.newPost h2 {
-  margin-bottom: 10px;
-}
-
-.newPost .form-group {
-  margin-bottom: 15px;
-}
-
-.newPost label {
-  display: block;
-  font-weight: bold;
-}
-
-.newPost input[type="text"],
-.newPost textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.newPost button {
-  background-color: #d34d43;
-  color: #fff;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 3px;
+.filterItem {
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.newPost button:hover {
-  background-color: #b73d35;
+.activeFilter {
+  background-color: #d34d43;
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 
-.news {
+.postConteiner {
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
-  border-radius: 20px;
+}
+
+.postBox {
+  display: flex;
+  flex-direction: row;
   background-color: #ccc;
-  padding: 10px;
+  margin: 0 20px 25px 20px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.postBox a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.postImg {
+  width: 300px;
+  height: 170px;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.postBox h2 {
+  margin: 0;
+}
+
+.postDate {
+  display: flex;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 footer {
