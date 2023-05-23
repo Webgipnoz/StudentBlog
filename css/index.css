@@ -65,7 +65,7 @@ main {
   margin-top: 2rem !important;
 }
 
-.filterItem {
+.filter-item {
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -84,8 +84,8 @@ main {
   margin-top: 15px;
 }
 
-.postBox {
-  display: flex;
+.post-box {
+  display: none;
   flex-direction: row;
   background-color: #ccc;
   margin: 0 20px 25px 20px;
@@ -94,7 +94,11 @@ main {
   font-size: 20px;
 }
 
-.postBox a {
+.show {
+  display: block;
+}
+
+.post-box a {
   text-decoration: none;
   color: inherit;
 }
@@ -108,7 +112,7 @@ main {
   border-radius: 0.5rem;
 }
 
-.postBox h2 {
+.post-box h2 {
   margin: 0;
 }
 

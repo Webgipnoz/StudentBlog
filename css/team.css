@@ -62,13 +62,14 @@ body {
 .privateBox {
   display: flex;
   flex-direction: row;
-  border: 3px solid black;
-  background-color: black;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 .privateBox:hover {
-  border: 3px solid #d34d43;
+  background-color: #d34d43;
+}
+.privateBox:hover h2 {
   background-color: #d34d43;
 }
 
@@ -77,7 +78,15 @@ body {
   padding: 0px;
   flex-direction: column;
   font-size: 25px;
-  background-color: white;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.info h2 {
+  background-color: #000;
+  color: #fff;
+  width: calc(100% - 30px);
+  margin: 0;
 }
 
 footer {
